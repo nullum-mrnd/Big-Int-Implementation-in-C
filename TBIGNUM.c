@@ -114,7 +114,7 @@ TBIGNUM* TBIGNUM_soma(TBIGNUM *num1, TBIGNUM *num2){
   
   if(num1->sinal == '-' && num2->sinal == '+'){ // se o primeiro numero for negativo
     num1->sinal = '+';
-    resp = TBIGNUM_sub(num1, num2);
+    resp = TBIGNUM_sub(num2, num1);
     num1->sinal = '-';
     return resp;
     
