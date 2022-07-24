@@ -33,3 +33,11 @@ void TBIGNUM_imprime(TBIGNUM *num);
 void TBIGNUM_imprime_rev(TBIGNUM *num);
 void TBIGNUM_remove(TBIGNUM *num, int digito);
 TBIGNUM* TBIGNUM_copia(TBIGNUM *num);
+void TBIGNUM_imprime_arq(TBIGNUM *num, FILE *fp);
+
+TBIGNUM* IntToBignum(int x);
+TBIGNUM *** Cria_tabuada(void);
+TBIGNUM* FloatToBignum(float x);
+void libera_tabuada(TBIGNUM ***tabuada);
+TBIGNUM ** Cria_mult_vet(TBIGNUM *num);
+void libera_mult_vet(TBIGNUM **vet);
